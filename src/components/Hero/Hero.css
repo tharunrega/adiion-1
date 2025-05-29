@@ -32,10 +32,12 @@
 .hero-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero-content p {
   font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 /* Background images for each slide */
@@ -49,4 +51,45 @@
 
 .slide3 {
   background-image: url('../../images/slide3.jpg');
+}
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (mobile, 480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
 }
